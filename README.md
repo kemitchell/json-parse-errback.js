@@ -6,3 +6,5 @@ module.exports = function(input, callback) {
   catch (error) {
     callback(error) } }
 ```
+
+"That's all, folks!"
