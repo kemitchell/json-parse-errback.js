@@ -1,10 +1,11 @@
 ```javascript
 module.exports = function(input, callback) {
+  var result
   try {
-    var result = JSON.parse(input)
-    callback(null, result) }
+    result = JSON.parse(input) }
   catch (error) {
-    callback(error) } }
+    return callback(error) }
+  callback(null, result) }
 ```
 
 "That's all, folks!"
